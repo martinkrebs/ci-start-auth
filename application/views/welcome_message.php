@@ -1,16 +1,8 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Welcome to CodeIgniter</title>
-    </head>
-    <body>
-        <h1>Kick Ass members only page</h1>
-                
-        <div>
-            <?php echo anchor('logout', 'logout'); ?>
-        </div>
-    </body>
-</html>
+<h1>Kick Ass members only page</h1>
+
+<h2>Hello <?php echo $_SESSION['username']; ?> you successfully logged in.:</h2>
+
+
+<div>
+    <?php echo anchor('users/logout', 'logout'); ?>
+</div>
